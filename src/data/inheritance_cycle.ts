@@ -353,7 +353,7 @@ const MurtaghChapterList: Chapter[] = [
     { chapter: 1, part: 5 }
 ];
 
-const eragon_portrait = require('../assets/eragon_portrait.tiff');
+const eragon_portrait = require('../assets/eragon_portrait.png');
 const arya_portrait = require('../assets/arya_portrait.jpg');
 const murtagh_portrait = require('../assets/murtagh_portrait.jpg');
 const roran_portrait = require('../assets/roran_portrait.webp');
@@ -385,21 +385,21 @@ export const characters: Character[] = [
         image: arya_portrait,
         color: '#228B22',
         wikiLink: 'https://inheritance.fandom.com/wiki/Arya',
-        firstAppearance: { 1: EragonChapterList[0] }
+        firstAppearance: { 1: EragonChapterList[40] }
     },
     {
         name: 'Nasuada',
         image: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d13a6a12-43c3-4da4-8756-7fa6b2d0fdab/da82c0i-8473f9e9-7532-4c81-811f-45c7b241cac5.jpg/v1/fit/w_600,h_803,q_70,strp/nasuada_by_liberlibelula_da82c0i-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAzIiwicGF0aCI6IlwvZlwvZDEzYTZhMTItNDNjMy00ZGE0LTg3NTYtN2ZhNmIyZDBmZGFiXC9kYTgyYzBpLTg0NzNmOWU5LTc1MzItNGM4MS04MTFmLTQ1YzdiMjQxY2FjNS5qcGciLCJ3aWR0aCI6Ijw9NjAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.vRBWZoZ2928HI9r06paggk84nR48b8Yku6jWqAXL4qM',
         color: '#7851A9',
         wikiLink: 'https://inheritance.fandom.com/wiki/Nasuada',
-        firstAppearance: { 1: EragonChapterList[1] }
+        firstAppearance: { 1: EragonChapterList[55] }
     },
     {
         name: 'Murtagh',
         image: murtagh_portrait,
         color: '#B22222',
         wikiLink: 'https://inheritance.fandom.com/wiki/Murtagh',
-        firstAppearance: { 1: EragonChapterList[1] }
+        firstAppearance: { 1: EragonChapterList[36] }
     }
 ];
 
@@ -466,7 +466,7 @@ export const INHERITANCE_CYCLE_DATA: DataBundle = {
     ...seriesData,
     map: mapData,
     markers: [
-        // Places
+        // Towns and Cities
         {
             title: 'Carvahall',
             coordinates: [1253, 866],
@@ -474,9 +474,7 @@ export const INHERITANCE_CYCLE_DATA: DataBundle = {
             image: 'https://preview.redd.it/ugfiosqv8er51.png?width=1080&crop=smart&auto=webp&s=11655ab379ee3fc0a0fd0f27ad840e4c787face7',
             appearances: {
                 1: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map(i => EragonChapterList[i]),
-                2: [1].map(i => EldestChapterList[i]),
-                3: [1].map(i => BrisingrChapterList[i]),
-                4: [1].map(i => InheritanceChapterList[i]),
+                2: [3, 4, 10, 11, 14, 15].map(i => EldestChapterList[i])
             },
             description: 'Carvahall is a small village in the Spine, located in the northern part of Alagaësia. It is the birthplace of Eragon and Roran.',
             wikiLink: 'https://inheritance.fandom.com/wiki/Carvahall',
@@ -529,6 +527,78 @@ export const INHERITANCE_CYCLE_DATA: DataBundle = {
             wikiLink: 'https://inheritance.fandom.com/wiki/Dras-Leona',
             confirmed: true
         },
+        {
+            title: 'Gil\'ead',
+            coordinates: [999, 1074],
+            type: 'city',
+            image: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/23d52755-ed7c-4529-86fb-a817fb58fa46/d2y36fc-c0ce1772-f935-47b7-9612-f9604821aa93.jpg/v1/fill/w_900,h_385,q_75,strp/gilead_prison_tower_gates_by_rusty001_d2y36fc-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9Mzg1IiwicGF0aCI6IlwvZlwvMjNkNTI3NTUtZWQ3Yy00NTI5LTg2ZmItYTgxN2ZiNThmYTQ2XC9kMnkzNmZjLWMwY2UxNzcyLWY5MzUtNDdiNy05NjEyLWY5NjA0ODIxYWE5My5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.lA-eJLiGUVDKsgLlbSE2OsNnEwmW4WHZ2oayV7SI5qE',
+            appearances: {
+                1: [39, 40, 41].map(i => EragonChapterList[i])
+            },
+            description: 'Gil\'ead is a city located in the northern part of Alagaësia. It was a fishing and trapping center, where hunters could replenish supplies and sell their pelts and meat before returning to the wild. It was also a major staging point for Galbatorix\'s Imperial Army with barracks, a fort, as well as some of the Broddring Empire\'s most secure prisons. ',
+            wikiLink: 'https://inheritance.fandom.com/wiki/Gil%27ead',
+            confirmed: true
+        },
+        {
+            title: 'Tronjheim',
+            coordinates: [222, 2182],
+            type: 'city',
+            image: 'https://cdna.artstation.com/p/assets/images/images/034/227/884/large/maxime-bocquier-maxime-bocquier-tronjheim-2-final.jpg?1611744960',
+            appearances: {
+                1: [50, 51, 52, 53, 54, 55, 56, 57, 59].map(i => EragonChapterList[i]),
+                2: [0, 1, 2, 5, 6, 7, 8, 9].map(i => EldestChapterList[i]),
+            },
+            description: 'Tronjheim, called the City of Eternal Twilight by the Elves, was the capital city of the dwarves, located within Farthen Dûr. It is a city-mountain and took generations to build. "Tronjheim" meant "Helm of Giants" in the Dwarvish language.',
+            wikiLink: 'https://inheritance.fandom.com/wiki/Farthen_D%C3%BBr',
+            confirmed: true
+        },
+        {
+            title: 'Tarnag',
+            coordinates: [323, 2102],
+            type: 'city',
+            appearances: {
+                2: [12, 13].map(i => EldestChapterList[i])
+            },
+            description: 'Tarnag was a dwarven city northwest of Farthen Dûr. It was built on a series of terraces carved out of the side of the mountain and was controlled by by Dûrgrimst Ragni Hefthyn.[1] It contained Celebdeil, the greatest temple in all of dwarfdom.',
+            wikiLink: 'https://inheritance.fandom.com/wiki/Tarnag',
+            confirmed: true
+        },
+        {
+            title: 'Hedarth',
+            coordinates: [629, 2480],
+            type: 'town',
+            appearances: {
+                2: [18].map(i => EldestChapterList[i])
+            },
+            description: 'Hedarth was a dwarf trading post situated between Âz Ragni and the Edda River. It was also the most easterly known settlement in Alagaësia',
+            wikiLink: 'https://inheritance.fandom.com/wiki/Hedarth',
+            confirmed: true
+        },
+        // Points of Interest
+        {
+            title: 'Helgrind',
+            coordinates: [597, 849],
+            type: 'point of interest',
+            image: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1e3ce19f-ae6c-4e61-8b3a-6cd66091c797/d5kzkhq-dd86ed03-d818-453a-abd0-6d64e21d2c2e.jpg/v1/fill/w_1069,h_748,q_70,strp/eragon_helgrind_by_trinitydigitaldesign_d5kzkhq-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTEyMCIsInBhdGgiOiJcL2ZcLzFlM2NlMTlmLWFlNmMtNGU2MS04YjNhLTZjZDY2MDkxYzc5N1wvZDVremtocS1kZDg2ZWQwMy1kODE4LTQ1M2EtYWJkMC02ZDY0ZTIxZDJjMmUuanBnIiwid2lkdGgiOiI8PTE2MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.kIMx-7LsYCiuUTNeTCzkg3HtepGQ6YQfSVmZhrDXiFM',
+            appearances: {
+                1: [35].map(i => EragonChapterList[i])
+            },
+            description: 'Helgrind ("The Gates of Death" in the ancient language) is a four-peaked mountain near the city of Dras-Leona. It was an object of religious reverence to Dras-Leona\'s cult and was also the home of the Ra\'zac and the Lethrblaka.',
+            wikiLink: 'https://inheritance.fandom.com/wiki/Helgrind',
+            confirmed: true
+        },
+        {
+            title: 'Brom\'s Tomb',
+            coordinates: [556, 892],
+            type: 'point of interest',
+            image: 'https://preview.redd.it/2fxzbv9uxai91.jpg?width=963&format=pjpg&auto=webp&s=7a70978971fc3588e01f18bb4424c5ef3e5bfbf2',
+            appearances: {
+                1: [38].map(i => EragonChapterList[i])
+            },
+            description: 'After being killed by the Ra\'zac, Brom is buried in a tomb which Saphira turned to diamond in the hills south of Helgrind.',
+            wikiLink: 'https://inheritance.fandom.com/wiki/Brom%27s_tomb',
+            confirmed: true
+        },
         // Events
         {
             title: 'Hatching of a dragon',
@@ -553,9 +623,23 @@ export const INHERITANCE_CYCLE_DATA: DataBundle = {
             description: 'After the Ra\'zac come to Carvahall in search of the dragon egg, they burn down the farm of the Garrow family.',
             wikiLink: 'https://inheritance.fandom.com/wiki/Garrow',
             confirmed: true
+        },
+        // Battles
+        {
+            title: 'Battle under Farthen Dûr',
+            coordinates: [212, 2172],
+            type: 'battle',
+            image: 'https://www.artstation.com/artwork/BkmGrz',
+            appearances: {
+                1: [58].map(i => EragonChapterList[i])
+            },
+            description: 'The Battle under Farthen Dûr, also called the Battle of Tronjheim, was fought between the Varden and their Dwarven allies against Urgals in the service of the Broddring Empire. ',
+            wikiLink: 'https://inheritance.fandom.com/wiki/Battle_under_Farthen_D%C3%BBr',
+            confirmed:true
         }
     ],
     paths: [
+        // Eragon
         {
             character: characters[CharacterIndex.Eragon],
             installment: books[0],
@@ -768,11 +852,429 @@ export const INHERITANCE_CYCLE_DATA: DataBundle = {
         {
             character: characters[CharacterIndex.Eragon],
             installment: books[0],
-            chapter: EragonChapterList[33],
+            chapter: EragonChapterList[35],
             confirmed: true,
             coordinates: [
-
+                [617, 839],
+                [597, 849]
+            ]
+        },
+        {
+            character: characters[CharacterIndex.Eragon],
+            installment: books[0],
+            chapter: EragonChapterList[36],
+            confirmed: false,
+            coordinates: [
+                [597, 849],
+                [567, 851]
+            ]
+        },
+        {
+            character: characters[CharacterIndex.Eragon],
+            installment: books[0],
+            chapter: EragonChapterList[36],
+            confirmed: true,
+            coordinates: [
+                [567, 851],
+                [556, 892]
+            ]
+        },
+        {
+            character: characters[CharacterIndex.Eragon],
+            installment: books[0],
+            chapter: EragonChapterList[39],
+            confirmed: true,
+            coordinates: [
+                [556, 892],
+                [592, 945],
+                [660, 989],
+                [689, 1007],
+                [768, 1036],
+                [849, 1045],
+                [931, 1061],
+                [999, 1074]
+            ]
+        },
+        {
+            character: characters[CharacterIndex.Eragon],
+            installment: books[0],
+            chapter: EragonChapterList[42],
+            confirmed: true,
+            coordinates: [
+                [999, 1074],
+                [991, 1089],
+                [985, 1094],
+                [971, 1092],
+                [957, 1100],
+                [949, 1114],
+                [944, 1121]
+            ]
+        },
+        {
+            character: characters[CharacterIndex.Eragon],
+            installment: books[0],
+            chapter: EragonChapterList[43],
+            confirmed: true,
+            coordinates: [
+                [944, 1121],
+                [932, 1125],
+                [918, 1131],
+                [896, 1136],
+                [879, 1138],
+                [870, 1148],
+                [861, 1154],
+                [843, 1157],
+                [828, 1168],
+                [818, 1187],
+                [793, 1206],
+                [784, 1219],
+                [772, 1230],
+                [756, 1233],
+                [743, 1231],
+            ]
+        },
+        {
+            character: characters[CharacterIndex.Eragon],
+            installment: books[0],
+            chapter: EragonChapterList[44],
+            confirmed: true,
+            coordinates: [
+                [743, 1231],
+                [731, 1234],
+                [721, 1237],
+                [721, 1237],
+                [711, 1244]
+            ]
+        },
+        {
+            character: characters[CharacterIndex.Eragon],
+            installment: books[0],
+            chapter: EragonChapterList[45],
+            confirmed: true,
+            coordinates: [
+                [711, 1244],
+                [573, 1303],
+                [496, 1389],
+                [404, 1469],
+                [367, 1510],
+            ]
+        },
+        {
+            character: characters[CharacterIndex.Eragon],
+            installment: books[0],
+            chapter: EragonChapterList[46],
+            confirmed: true,
+            coordinates: [
+                [367, 1510],
+                [399, 1574],
+            ]
+        },
+        {
+            character: characters[CharacterIndex.Eragon],
+            installment: books[0],
+            chapter: EragonChapterList[47],
+            confirmed: true,
+            coordinates: [
+                [399, 1574],
+                [447, 1622],
+                [450, 1675]
+            ]
+        },
+        {
+            character: characters[CharacterIndex.Eragon],
+            installment: books[0],
+            chapter: EragonChapterList[48],
+            confirmed: true,
+            coordinates: [
+                [450, 1675],
+                [420, 1698],
+                [400, 1705],
+                [387, 1722],
+                [364, 1727],
+                [340, 1734],
+                [316, 1741],
+                [295, 1754],
+                [276, 1767],
+            ]
+        },
+        {
+            character: characters[CharacterIndex.Eragon],
+            installment: books[0],
+            chapter: EragonChapterList[49],
+            confirmed: true,
+            coordinates: [
+                [276, 1767],
+                [247, 1771],
+                [221, 1781],
+                [201, 1792],
+                [191, 1821],
+                [187, 1843],
+                [194, 1874],
+                [197, 1894],
+                [201, 1919],
+                [203, 1935],
+            ]
+        },
+        {
+            character: characters[CharacterIndex.Eragon],
+            installment: books[0],
+            chapter: EragonChapterList[50],
+            confirmed: true,
+            coordinates: [
+                [203, 1935],
+                [222, 2182],
+            ]
+        },
+        {
+            character: characters[CharacterIndex.Eragon],
+            installment: books[1],
+            chapter: EldestChapterList[12],
+            confirmed: true,
+            coordinates: [
+                [222, 2182],
+                [267, 2109],
+                [302, 2081],
+                [323, 2102]
+            ]
+        },
+        {
+            character: characters[CharacterIndex.Eragon],
+            installment: books[1],
+            chapter: EldestChapterList[16],
+            confirmed: true,
+            coordinates: [
+                [323, 2102],
+                [331, 2119],
+                [332, 2137],
+                [341, 2143],
+                [348, 2144],
+                [351, 2148],
+                [351, 2154],
+                [356, 2157],
+                [359, 2149],
+                [362, 2144],
+                [366, 2139],
+                [368, 2133],
+                [368, 2131],
+                [371, 2126],
+                [376, 2124],
+                [382, 2124],
+                [385, 2123],
+                [389, 2126],
+                [400, 2127],
+                [406, 2132],
+                [409, 2134],
+                [419, 2134],
+                [424, 2139],
+                [429, 2142],
+                [434, 2152],
+                [435, 2156],
+                [441, 2162],
+                [443, 2169],
+                [448, 2179],
+                [455, 2183],
+                [457, 2191],
+                [457, 2200],
+                [454, 2207],
+                [454, 2212],
+                [454, 2222],
+                [456, 2227],
+                [457, 2235],
+                [453, 2243],
+                [450, 2250],
+                [444, 2256],
+                [441, 2264],
+                [441, 2269],
+                [443, 2275],
+                [444, 2279],
+                [443, 2283],
+                [445, 2288],
+                [448, 2289],
+                [453, 2293],
+                [459, 2295],
+                [467, 2295],
+                [473, 2293],
+                [476, 2292],
+                [482, 2292],
+                [493, 2292],
+                [500, 2292],
+                [504, 2293],
+                [510, 2294],
+                [517, 2291],
+                [524, 2291],
+                [534, 2290],
+                [539, 2288],
+                [546, 2285],
+                [555, 2285],
+            ]
+        },
+        {
+            character: characters[CharacterIndex.Eragon],
+            installment: books[1],
+            chapter: EldestChapterList[17],
+            confirmed: true,
+            coordinates: [
+                [555, 2285],
+                [564, 2281],
+                [566, 2278],
+                [569, 2274],
+                [574, 2275],
+                [579, 2273],
+                [583, 2273],
+                [585, 2278],
+                [583, 2282],
+                [578, 2287],
+                [576, 2291],
+                [574, 2297],
+                [574, 2303],
+                [577, 2305],
+                [579, 2310],
+                [580, 2316],
+                [582, 2317],
+                [586, 2319],
+                [589, 2320],
+                [592, 2324],
+                [597, 2325],
+                [603, 2323],
+                [609, 2320],
+                [612, 2319],
+                [616, 2318],
+                [620, 2320],
+                [623, 2324],
+                [626, 2326],
+                [629, 2327],
+                [632, 2325],
+                [635, 2321],
+                [638, 2318],
+                [642, 2318],
+                [646, 2318],
+                [647, 2321],
+                [647, 2326],
+                [648, 2330],
+                [651, 2332],
+                [653, 2333],
+                [653, 2336],
+                [654, 2339],
+                [657, 2342],
+                [661, 2344],
+                [662, 2349],
+                [660, 2352],
+                [656, 2355],
+                [651, 2354],
+                [646, 2354],
+                [642, 2355],
+                [638, 2356],
+                [637, 2362],
+                [633, 2367],
+                [630, 2372],
+                [628, 2375],
+            ]
+        },
+        {
+            character: characters[CharacterIndex.Eragon],
+            installment: books[1],
+            chapter: EldestChapterList[18],
+            confirmed: true,
+            coordinates: [
+                [628, 2375],
+                [623, 2380],
+                [623, 2385],
+                [623, 2392],
+                [625, 2399],
+                [624, 2404],
+                [622, 2408],
+                [624, 2410],
+                [626, 2416],
+                [624, 2420],
+                [622, 2424],
+                [620, 2429],
+                [620, 2433],
+                [622, 2435],
+                [624, 2438],
+                [623, 2441],
+                [621, 2446],
+                [617, 2448],
+                [614, 2453],
+                [613, 2457],
+                [612, 2462],
+                [612, 2468],
+                [612, 2472],
+                [615, 2476],
+                [617, 2478],
+                [620, 2482],
+                [622, 2484],
+                [629, 2480],
+                [640, 2475],
+                [644, 2466],
+                [643, 2446],
+                [644, 2429],
+                [646, 2425],
+                [643, 2416],
+                [645, 2407],
+                [655, 2399],
+                [661, 2395],
+                [660, 2386],
+                [665, 2380],
+                [668, 2373],
+                [674, 2373],
+                [682, 2376],
+                [689, 2379],
+                [693, 2379],
+                [700, 2382],
+                [705, 2386],
+                [712, 2380],
+                [719, 2378],
+                [726, 2380],
+                [733, 2380],
+                [740, 2378],
+            ]
+        },
+        {
+            character: characters[CharacterIndex.Eragon],
+            installment: books[1],
+            chapter: EldestChapterList[19],
+            confirmed: true,
+            coordinates: [
+                [740, 2378],
+                [748, 2382],
+                [755, 2386],
+                [759, 2395],
+                [761, 2399],
+                [761, 2408],
+                [759, 2410],
+                [764, 2414],
+                [771, 2416],
+                [774, 2424],
+                [775, 2432],
+                [772, 2439],
+                [768, 2443],
+                [766, 2450],
+                [766, 2454],
+                [770, 2459],
+                [772, 2465],
+                [773, 2472],
+                [775, 2479],
+                [781, 2479],
+                [787, 2478],
+                [791, 2481],
+                [795, 2479],
+                [798, 2471],
+                [802, 2466],
+                [804, 2463],
+                [805, 2454],
+                [806, 2449],
+                [810, 2445],
+                [813, 2443],
+                [818, 2436],
+                [824, 2431],
+                [828, 2429],
+                [833, 2419],
+                [839, 2415],
+                [845, 2412],
+                [847, 2407],
+                [852, 2401],
             ]
         }
+        // Roran
     ],
 };
