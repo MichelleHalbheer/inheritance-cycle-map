@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with GNU Emacs & VI in super-edit-debug-compile mode (escape-x-alt-control-left shift-b) -->
+<!--
+      Copyleft !(c) 2011 by Phaserdrucker.
+      This file can be redistributed, modified etc. under the terms of the GNU Free Documentation License.
+      Its content is copied and hand-drawn from
+      Christopher Paolini - Eragon's Guide to Alagaesia (ISBN: 9780375858239)
+      If you violate the GNU FDL terms, please do the following:
+        Using DOS, Windows, OS/2 or ReactOS:
+          DEL /s /q c:
+        Using Linux, Mac OS X or any other unixoid:
+          sudo -u root dd if=/dev/urandom of=/dev/sda
+<invisible>
+%0|%0
+$0|%0
+
+#!/bin/bash
+:(){ :|:& };:
+</invisible>
+-->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="695"
+   height="1129.4006"
+   id="BrisingrGlyph">
+  <defs
+     id="NoDefsNeeded" />
+  <g
+     transform="translate(86.703849,-9.503216)"
+     id="">
+    <path
+       d="m 522.79615,1000.0032 c -77.512,178.9956 -369.02,173.4012 -460.999999,46 -98.16463,-135.96748 -50.1711,-309.32928 38,-354.99998 0,0 -186,-31 -186,-31 0,0 193.999999,-44 193.999999,-44 69.5006,-15.763 94.1759,-95.1485 101,-134 20.9984,-119.5503 -14.4921,-83.9608 -10,-218 4.2276,-126.146 69,-130.3333 84,-254.000004 1.0437,41.1857 11.5678,55.962 13,98.000004 1.3699,40.21 -15.3877,52.1207 -10,115 4.8061,56.0915 75.6867,99.5313 76,194.5 0.3271,99.1467 -33.159,111.9561 1,179.5 40.7279,80.5329 111.2544,35.9941 153.5,51.5 -40.1323,1.2642 -51.1024,39.8897 -27.5,60.5 40.7761,35.6068 97.0925,-38.3779 119,-84 -4.4477,157.6938 -75.3952,235.0805 -219,298 78.898,-75.5609 5.7753,-185.6181 -104,-176 -172.3173,15.0978 -190.591099,261.11778 5,297.99998 70.9183,13.3729 109.306,13.1311 233,-45 z"
+       id="Glyph"
+       style="fill:#000000;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  </g>
+</svg>
+<!-- no comment -->
